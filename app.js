@@ -15,11 +15,14 @@ const createWindow = () => {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadURL('http://localhost:3000')
+  mainWindow.loadURL('http://localhost:4200/reports/request')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 }
+
+app.commandLine.appendSwitch('ignore-certificate-erros',true);
+
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
